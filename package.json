@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
+  "scripts": { 
     "test": "echo \"Error: no test specified\" && exit 1"
+    "cli": "node ./scr/cli.js ./arquivo/texto.md"
+    "cli:valida":  "node ./scr/cli.js ./arquivo/texto.md --valida"
   },
   "repository": {
     "type": "git",
