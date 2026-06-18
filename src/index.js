@@ -4,8 +4,8 @@ import chalk from 'chalk';
 function extraiLinks(texto) {
   const regex = /\[([^[\]]*?)\]\((https?:\/\/[^\s?#.].[^\s]*)\)/gm;
   const capturas = [...texto.matchAll(regex)];
-  const resultados = capturas.map(captura => ({[captura[1]]: captura[2]}))
-  return resultados.length !== 0 ? resultado : 'não há links no arquivo';
+  const resultado = capturas.map(captura => ({[captura[1]]: captura[2]}))
+  return resultado.length !== 0 ? resultado : 'não há links no arquivo';
 }
 
 function trataErro(erro) {
